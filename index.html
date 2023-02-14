@@ -5,20 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pomodoro Timer</title>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="progressBar.js"></script>
 </head>
 <body>
   <div id="pomo-container">
     <div id="pomo-clock">
       <div id="pomo-timer"></div>
-      <div id="pomo-clock-actions">
-        <button id="pomo-start">Start</button>
-        <button id="pomo-pause">Pause</button>
-        <button id="pomo-stop">Stop</button>
+      <div>
+        <input type="text" id="pomo-task" placeholder="Enter your task..."/>
       </div>
+      <div id="pomo-clock-actions">
+        <button id="pomo-start">
+          <i class="fas fa-play" id="play-icon"></i>
+          <i class="fas fa-pause hidden" id="pause-icon"></i>
+        </button>
+        <button id="pomo-stop" class="hidden">
+          <i class="fas fa-stop"></i>
+        </button>
+      </div>
+      <div id="pomo-actions">
+        <p><span>Time (minutes): </span></p>
+        <div class="pomo-input">
+          <label>Work </label>
+          <input name="input-work-duration" id="input-work-duration" type="number" />
+        </div>
+        <div class="pomo-input">
+          <label>Break </label>
+          <input name="input-break-duration" id="input-break-duration" type="number" />
+        </div>
+      </div>
+    </div>
+    <div id="pomo-info">
+      <h3>Sessions</h3>
+      <ul id="pomo-sessions">
+      </ul>
     </div>
   </div>
 
-    
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
