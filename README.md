@@ -1,2 +1,2 @@
-# chip-e.github.io
-## Pomodoro timer in JavaScript
+# Javascript Pomodoro Timer 
+A timer for Pomodoro time management technique
